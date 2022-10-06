@@ -11,6 +11,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:7.1.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
     }
 }
 
@@ -49,6 +50,7 @@ android {
 }
 
 dependencies {
+    implementation files('C:/Users/mans/dev/skola/dvae08/flutter-webrtc/android/src/main/java/libs/BasicFunctionSDK_1.2.0.aar')
     implementation 'com.github.webrtc-sdk:android:104.5112.01'
     implementation "com.twilio:audioswitch:1.1.5"
     implementation 'androidx.annotation:annotation:1.1.0'
