@@ -689,12 +689,11 @@ class GetUserMediaImpl {
         String sourceId = getSourceIdConstraint(videoConstraintsMap);
 
         VideoCapturer videoCapturer;
-        if(true){
-             videoCapturer = createVideoCapturer(cameraEnumerator, isFacing, sourceId);
-        }else{
-            videoCapturer = new ByteVideoCapturer( info.width, info.height);
+        if (false) {
+            videoCapturer = createVideoCapturer(cameraEnumerator, isFacing, sourceId);
+        } else {
+            videoCapturer = new ByteVideoCapturer(info.width, info.height);
         }
-
 
         if (videoCapturer == null) {
             return null;
